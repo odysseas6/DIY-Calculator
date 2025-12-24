@@ -8,18 +8,18 @@ An advanced floating-point calculator project for Arduino using a 4x5 matrix key
 * **Scientific Operations:**
     * **Modulo (`B`):** Calculates the remainder of a division.
     * **Power & Root (`A`):** A submenu allows you to choose between calculating $x^y$ (Power) or $\sqrt[y]{x}$ (Root).
-* [cite_start]**Smart Formatting:** Automatically switches between integer display, fixed decimals, and scientific notation based on result size [cite: 147-150].
-* [cite_start]**Error Handling:** Protects against Division by 0, Modulo by 0, and imaginary numbers (even roots of negative numbers)[cite: 132, 135, 138].
-* [cite_start]**Chain Calculations:** Immediately use the result of the previous calculation as the start of the next one[cite: 97, 108].
+* **Smart Formatting:** Automatically switches between integer display, fixed decimals, and scientific notation based on result size.
+* **Error Handling:** Protects against Division by 0, Modulo by 0, and imaginary numbers (even roots of negative numbers).
+* **Chain Calculations:** Immediately use the result of the previous calculation as the start of the next one.
 
 ## Hardware Requirements
-* **Microcontroller:** Arduino Uno, Nano, or compatible.
-* [cite_start]**Display:** 16x2 LCD with I2C Backpack (Address: `0x27`)[cite: 79].
+**Microcontroller:** Arduino Uno, Nano, or compatible.
+* **Display:** 16x2 LCD with I2C Backpack (Address: `0x27`).
 * **Input:** 4x5 Matrix Keypad (Membrane or Mechanical).
 * **Connections:** Jumper wires.
 
 ## Wiring & Pinout
-[cite_start]Based on the code configuration[cite: 82], connect your components as follows:
+Based on the code configuration, connect your components as follows:
 
 ### Keypad Connection
 | Keypad Pin | Arduino Pin | Function |
@@ -43,7 +43,7 @@ An advanced floating-point calculator project for Arduino using a 4x5 matrix key
 | SCL | A5 (Uno) / D19 (Mega) |
 
 ## Keypad Map
-[cite_start]The code uses a custom 4x5 layout[cite: 81]:
+The code uses a custom 4x5 layout:
 
 | | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
